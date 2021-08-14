@@ -283,15 +283,18 @@ header{
 
 .cardItem{
     width:380px;
-    background-color: #95e1d3;
     position: relative;
 }
 
-.cardItem:hover .cardImage{
+.cardInner{
+    background-color: #95e1d3;
+}
+
+.cardInner:hover .cardImage{
     transform: translate3d(-10px, -10px, 0);
 }
 
-.cardItem:hover .cardImage img{
+.cardInner:hover .cardImage img{
     opacity: 0.1;
 }
 
@@ -326,8 +329,27 @@ header{
     transition: opacity .2s linear;
 }
 
-.cardItem:hover .cardText{
+.cardInner:hover .cardText{
     opacity: 1;
+}
+
+.cardInfo{
+    margin-top: 20px;
+
+    text-align: center;
+}
+
+.cardName{
+    text-transform: uppercase;
+    color: #333;
+    font-size: 14px;
+}
+
+.cardProf{
+    color: #999;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
 }
 
 /* STATISTICS */
@@ -613,4 +635,11 @@ header{
 
 .socialItem:last-child{
     border-right: 0;
+}
+
+/* LOGOS */
+
+.logos{
+    display: flex;
+    justify-content: space-between;
 }
